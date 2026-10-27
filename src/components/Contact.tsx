@@ -38,12 +38,6 @@ export default function Contact() {
             <div className={styles.cardValue}>@iv_kinggg ↗</div>
           </a>
         </div>
-
-        <div className={styles.cta}>
-          <a href={`mailto:${personal.email}`} className={styles.btn}>
-            Get in touch
-          </a>
-        </div>
       </section>
     </>
   )
