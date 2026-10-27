@@ -27,7 +27,7 @@ export default function Projects() {
         <p className={s.label}>03 / Projects</p>
         <h2 className={s.title}>Featured Work</h2>
         <p className={s.subtitle}>
-          A selection of full-stack, AI, and IoT projects. Each one solves a real-world problem through clean implementation and thoughtful architecture.
+          A selection of full-stack, AI, and IoT projects.
         </p>
 
         <div className={styles.list}>
