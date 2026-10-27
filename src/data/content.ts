@@ -98,7 +98,7 @@ export const projects = [
 
 export const experience = [
   {
-    period: '2024 — 2025',
+    period: '2025 — 2026',
     role: 'Full-Stack Developer',
     type: 'Thesis Project',
     company: 'Acadify',
@@ -112,7 +112,7 @@ export const experience = [
     ],
   },
   {
-    period: '2024',
+    period: '2026',
     role: 'Full-Stack & AI Developer',
     type: 'Freelance',
     company: 'Pig Monitoring System',
@@ -125,7 +125,7 @@ export const experience = [
     ],
   },
   {
-    period: '2024',
+    period: '2026',
     role: 'Full-Stack & IoT Developer',
     type: 'Freelance',
     company: 'IoT Location Tracker',
