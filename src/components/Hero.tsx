@@ -14,7 +14,7 @@ export default function Hero() {
         <p className={styles.bio}>{personal.bio}</p>
         <div className={styles.cta}>
           <a href="#projects" className={styles.btnPrimary}>View My Projects</a>
-          <a href="#contact" className={styles.btnGhost}>Contact Me</a>
+          <a href="#contact" className={styles.btnGhost}>Get in touch</a>
         </div>
         <p className={styles.stack}>
           STACK: React // Flask // Python // YOLOv8 // PostgreSQL // ESP32

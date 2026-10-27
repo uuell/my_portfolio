@@ -56,10 +56,10 @@ export const projects = [
     role: 'Full-Stack Developer · Thesis Project',
     description:
       'A full-stack academic management platform with AI-powered grading, YOLOv8 computer vision for output evaluation, OCR for document processing, and a complete grade tracking and course management system.',
-    image: '/screenshots/acadify.png',   // ← drop screenshot in /public/screenshots/
+    image: './screenshots/acadify.png',   // ← drop screenshot in /public/screenshots/
     tags: ['React', 'TypeScript', 'Flask', 'PostgreSQL', 'YOLOv8', 'PyTorch', 'OCR'],
-    github: 'https://github.com/uuell/flask_grading_system',
-    live: 'https://acadify.online/',
+    github: 'https://github.com/uuell/Acadify-frontend',
+    live: 'https://acadify-frontend.torri8704.workers.dev/',
   },
   {
     num: '02',
@@ -67,10 +67,10 @@ export const projects = [
     role: 'Full-Stack Developer',
     description:
       'An AI-powered web application that converts voice input into structured income statements. Users speak their financial data and the app uses Groq\'s LLM API to parse, structure, and format it into a professional income statement.',
-    image: '/screenshots/voice-income.png',  // ← drop screenshot here
+    image: '/screenshots/AI_voice-to-income.png',  // ← drop screenshot here
     tags: ['Next.js', 'TypeScript', 'Groq AI', 'REST API', 'PostgreSQL'],
-    github: '',   // ← add your repo
-    live: '',     // ← add live url
+    github: 'https://github.com/uuell/Automated-Voice-to-Income-Statement',   // ← add your repo
+    live: 'https://voice-statement-ai.vercel.app/',     // ← add live url
   },
   {
     num: '03',
@@ -78,7 +78,7 @@ export const projects = [
     role: 'Full-Stack Developer · Freelance',
     description:
       'A real-time livestock monitoring system running on a Raspberry Pi server. Uses YOLOv8 to detect and track pigs via live camera feed, logging behavior patterns and activity data accessible through a web dashboard.',
-    image: '/screenshots/pig-monitoring.png',  // ← drop screenshot here
+    image: '/screenshots/pig_monitoring_system.jpg',  // ← drop screenshot here
     tags: ['YOLOv8', 'Python', 'Flask', 'Raspberry Pi', 'OpenCV', 'PostgreSQL'],
     github: 'https://github.com/uuell/yolov8_pig_monitoring_system',
     live: '',
@@ -89,10 +89,10 @@ export const projects = [
     role: 'Full-Stack Developer · Freelance',
     description:
       'A web-based IoT tracking application that displays the real-time GPS location of ESP32 devices on an interactive map. Devices send coordinates via REST API over the internet, enabling live asset or field tracking.',
-    image: '/screenshots/iot-tracker.png',  // ← drop screenshot here
+    image: '/screenshots/iot_location_tracker.jpg',  // ← drop screenshot here
     tags: ['Flask', 'ESP32', 'PostgreSQL', 'IoT', 'REST API', 'JavaScript'],
     github: 'https://github.com/uuell/flask_iot_tracking_app',
-    live: 'https://flask-iot-tracking-app-1.onrender.com/',
+    live: '',
   },
 ]
 
