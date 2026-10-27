@@ -1,0 +1,114 @@
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.tabs {
+  background: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+}
+.tab:last-child { border-bottom: none; }
+.tab:hover { background: var(--border); }
+
+.tabActive {
+  background: var(--border) !important;
+}
+[data-theme='light'] .tabActive { background: rgba(255,255,255,0.7) !important; }
+[data-theme='dark']  .tabActive { background: rgba(255,255,255,0.08) !important; }
+
+.tabShort {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  min-width: 30px;
+}
+.tabActive .tabShort { color: var(--text); }
+
+.tabFull {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 400;
+}
+.tabActive .tabFull { color: var(--text); }
+
+.panel {
+  background: var(--card-bg);
+  padding: 1.75rem;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.panelShort {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+
+.panelCategory {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.65rem;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 300;
+}
+
+.dot {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--muted);
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .layout { grid-template-columns: 1fr; }
+  .tabs { flex-direction: row; flex-wrap: wrap; }
+  .tab { border-bottom: none; border-right: 1px solid var(--border); flex: 1; justify-content: center; }
+  .tabFull { display: none; }
+}

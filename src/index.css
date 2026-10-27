@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+
+:root {
+  --bg:       #e8e8e8;
+  --bg2:      #dcdcdc;
+  --text:     #1a1a1a;
+  --muted:    #777;
+  --border:   rgba(0,0,0,0.09);
+  --nav-bg:   rgba(210,210,210,0.78);
+  --card-bg:  rgba(255,255,255,0.42);
+  --card-bdr: rgba(0,0,0,0.08);
+  --tag-bg:   rgba(0,0,0,0.055);
+  --icon:     #555;
+}
+
+[data-theme='dark'] {
+  --bg:       #0e0e0e;
+  --bg2:      #161616;
+  --text:     #efefef;
+  --muted:    #888;
+  --border:   rgba(255,255,255,0.09);
+  --nav-bg:   rgba(18,18,18,0.88);
+  --card-bg:  rgba(255,255,255,0.04);
+  --card-bdr: rgba(255,255,255,0.08);
+  --tag-bg:   rgba(255,255,255,0.07);
+  --icon:     #aaa;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s, color 0.4s;
+  overflow-x: hidden;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }

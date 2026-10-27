@@ -1,0 +1,91 @@
+.nav {
+  position: fixed;
+  top: 1.25rem; left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--nav-bg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.45rem 0.6rem 0.45rem 0.75rem;
+  transition: background 0.4s, border-color 0.4s;
+  white-space: nowrap;
+}
+
+.logo img {
+  width: 30px; height: 24px;
+  object-fit: contain;
+  display: block;
+  transition: filter 0.4s;
+}
+[data-theme='dark'] .logo img { filter: invert(1) brightness(0.88); }
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.links {
+  display: flex;
+  gap: 0.1rem;
+  list-style: none;
+}
+
+.links a {
+  color: var(--muted);
+  font-size: 12.5px;
+  font-weight: 400;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  transition: color 0.2s, background 0.2s;
+  display: block;
+}
+.links a:hover {
+  color: var(--text);
+  background: var(--border);
+}
+
+.resumeBtn {
+  font-size: 12px;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.32rem 0.85rem;
+  margin-left: 0.4rem;
+  transition: background 0.2s, border-color 0.2s;
+  font-weight: 400;
+}
+.resumeBtn:hover {
+  background: var(--border);
+}
+
+.themeBtn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  width: 28px; height: 28px;
+  margin-left: 0.3rem;
+  color: var(--muted);
+  font-size: 13px;
+  display: flex; align-items: center; justify-content: center;
+  transition: color 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+.themeBtn:hover { color: var(--text); border-color: var(--muted); }
+
+@media (max-width: 860px) {
+  .nav { gap: 1rem; padding: 0.4rem 0.6rem 0.4rem 0.65rem; }
+  .links { gap: 0 }
+  .links a { font-size: 11.5px; padding: 0.28rem 0.5rem; }
+  .resumeBtn { display: none; }
+}
+
+@media (max-width: 640px) {
+  .links li:nth-child(n+4) { display: none; }
+}
