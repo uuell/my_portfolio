@@ -59,7 +59,7 @@ export const projects = [
     image: './screenshots/acadify.png',   // ← drop screenshot in /public/screenshots/
     tags: ['React', 'TypeScript', 'Flask', 'PostgreSQL', 'YOLOv8', 'PyTorch', 'OCR'],
     github: 'https://github.com/uuell/Acadify-frontend',
-    live: 'https://acadify-frontend.torri8704.workers.dev/',
+    live: 'https://www.acadify.online/',
   },
   {
     num: '02',
