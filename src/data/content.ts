@@ -45,7 +45,7 @@ export const skills = [
   {
     category: 'Tools',
     short: 'OPS',
-    items: ['Git', 'GitHub', 'Figma', 'CI/CD', 'Cloudflare Pages', 'Render', 'Vercel', 'Postman'],
+    items: ['Git', 'GitHub', 'Figma', 'CI/CD', 'Cloudflare', 'Render', 'Vercel', 'Postman', 'SDLC', 'STLC'],
   },
 ]
 

@@ -17,7 +17,7 @@ export default function Hero() {
           <a href="#contact" className={styles.btnGhost}>Get in touch</a>
         </div>
         <p className={styles.stack}>
-          STACK: React // Flask // Python // YOLOv8 // PostgreSQL // ESP32
+          STACK: Nodejs // React // Nextjs // Python // Flask // YOLOv8 // PostgreSQL // Microprocessor
         </p>
       </div>
 
